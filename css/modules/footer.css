@@ -1,0 +1,52 @@
+.footer_css {
+	padding: 1rem 2rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3,1fr);
+	width: 100%;
+	height: 2in;
+	color: white;
+	background-color: var(--global-color-one);
+	z-index: +1;
+}
+.footer_css * {
+	color: white;
+	text-align: center;
+	font-family: lucida sans;
+}
+.footer_css section {
+	padding: 1rem;
+}
+.footer_css section h4 {
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+.footer_css section div a img {
+	margin: 0 1.6vw;
+	height: 30px;
+	transition: 0.2s all;
+}
+.footer_css section div a img:hover {
+	transform: scale(1.2);
+}
+.footer_css section form input {
+	margin-bottom: 4px;
+	min-width: 2in;
+	width: 40%;
+	height: 2rem;
+	border-radius: 2px;
+	border: none;
+}
+.footer_css section form input[type="text"] {
+	background-color: #E66C00;
+}
+.footer_css section form input[type="button"] {
+	color: #070707;
+	background-color: white;
+}
+@media only screen and (max-width: 767px) {
+	.footer_css {
+		grid-template-columns: 1fr;
+		height: 6in;
+	}
+}

@@ -1,0 +1,103 @@
+#store-id,
+#offers-id,
+#customers-id,
+#shipping-id {display: none;}
+
+.divisor_gray {
+	background-color: #EDEDED;
+	border-radius: 50%;
+}
+
+.button_box {
+	padding: 2vw;
+	display: grid;
+	grid-template-columns: 1fr .4vw 1fr .4vw 1fr .4vw 1fr;
+	grid-gap: 2vw;
+	width: 100%;
+	height: 34vw;
+	background-color: white;
+}
+.button_box label {
+	padding-bottom: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #B8B8B8;
+	font-size: 4vw;
+	font-family: Arial Unicode MS;
+	background-repeat: no-repeat;
+	background-position: 50% 6vw;
+	background-size: 60%;
+	border-radius: .8vw;
+	cursor: pointer;
+}
+
+label[for="store-id"] {background-image: url('../../img/svg/house_store_icon.svg');}
+
+label[for="offers-id"] {background-image: url('../../img/svg/tag_offers_icon.svg');}
+
+label[for="customers-id"] {background-image: url('../../img/svg/hand_customers_icon.svg');}
+
+label[for="shipping-id"] {
+	background-image: url('../../img/svg/car_shipping_icon.svg');
+	background-position: 50% 8vw;
+	background-size: 90%;
+}
+
+#store-id:checked ~ label[for="store-id"] {
+	color: white;
+	background-image: url('../../img/svg/house_store_icon_(white).svg');
+	background-color: var(--global-color-one);
+}
+#offers-id:checked ~ label[for="offers-id"] {
+	color: white;
+	background-image: url('../../img/svg/tag_offers_icon_(white).svg');
+	background-color: var(--global-color-one);
+}
+#customers-id:checked ~ label[for="customers-id"] {
+	color: white;
+	background-image: url('../../img/svg/hand_customers_icon_(white).svg');
+	background-color: var(--global-color-one);
+}
+#shipping-id:checked ~ label[for="shipping-id"] {
+	color: white;
+	background-image: url('../../img/svg/car_shipping_icon_(white).svg');
+	background-color: var(--global-color-one);
+}
+
+.preview_box {
+	background-color: white;
+}
+.preview_box h2 {
+	color: #525252;
+	font-size: 4vw;
+	font-family: lucida sans;
+	text-align: center;
+	text-transform: uppercase;
+}
+.preview_box img {
+	width: 100%;
+}
+.href_continue_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.href_continue {
+	margin: 1rem 0;
+	padding: .2rem 1rem;
+	color: white;
+	font-size: 1.4rem;
+	font-family: lucida sans;
+	text-transform: capitalize;
+	background-color: var(--global-color-one);
+	border-radius: 2pc;
+	transition: all .2s;
+}
+.href_continue:hover {
+	box-shadow: 4px 4px 4px rgba(0,0,0,.08);
+	transform: scale(1.04);
+}
+.href_continue:active {transform: scale(1.12);}

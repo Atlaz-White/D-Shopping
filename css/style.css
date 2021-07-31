@@ -1,0 +1,33 @@
+@import url('modules/header.css');
+@import url('modules/opening.css');
+@import url('modules/button_ box + href_continue.css');
+@import url('modules/footer.css');
+@import url('modules/indicador_de_area.css');
+
+*,::before,::after {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: transparent;
+	box-sizing: border-box;
+}
+:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+:root {
+	--global-color-one: #FF7800;
+}
+body {
+	margin: 2vw auto; /**/
+	max-width: 1200px; /**/
+	background-color: #F8F8F8;
+	box-shadow: 0 0 1rem rgba(0,0,0,.2);
+}
+.filter_mode {
+	filter: invert(100%);
+}
+.filter_mode *[class*="img_"] {
+	filter: invert(100%);
+}
