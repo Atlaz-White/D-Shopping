@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>D´Shopping</title>
-		<script src="./js/main.js" type="module"></script>
+		<link rel="shortcut icon" href="./img/dshopping-[favicon].svg">
+		<title>D´Shopping | Sitio Oficial</title>
+		<!--| Imports |-->
+		<link rel="stylesheet" href="css/style.css">
+		<script src="./js/main.js"></script>
 	</head>
 	<body>
-		<h1>D´Shopping</h1>
-	</body>
+		<header class="header_css">
+			<h2 class="dshopping_h2"><div class="img_bag_dshopping"></div>D´Shopping</h2>
+			<input type="checkbox" id="nav-id">
+			<label for="nav-id" class="nav_for"><span>|||</span></label>
+			<nav class="nav_css">
+				<a href="index.html">Inicio</a>
+				<a href="pages/store.html">Tienda</a>
+				<a href="pages/offers.html">Ofertas</a>
+				<a href="pages/customers.html">Atención al cliente</a>
+				<a href="pages/shipping.html">Envíos</a>
+			</nav>
+		</header>
+		<section class="img_opening_box">
+			<div class="img_opening_inter">
+				<h2>D´Shopping</h2>
+			</div>
+		</section>
+		<section class="button_box">
+			<input type="radio" id="store-id" name="geminis">
+			<label for="store-id" class="button-inactive">Tienda</label>
+			<span class="divisor_gray"></span>
+			<input type="radio" id="offers-id" name="geminis">
+			<label for="offers-id" class="button-inactive">Ofertas</label>
+			<span class="divisor_gray"></span>
+			<input type="radio" id="customers-id" name="geminis">
+			<label for="customers-id" class="button-inactive">Clientes</label>
+			<span class="divisor_gray"></span>
+			<input type="radio" id="shipping-id" name="geminis">
+			<label for="shipping-id" class="button-inactive">Envíos</label>
+		</section>
+		<section class="preview_box">
+			<h2 id="preview-h2-id"></h2>
+			<img src="" id="preview-id">
+		</section>
+	<section class="href_continue_box">
+		<a href=""></a>
+	</section>
+	<footer class="footer_css">
+		<section>
+			<h4>Redes sociales</h4>
+			<div>
+				<a href=""><img src="img/svg/Icono-Facebook.svg" alt="Facebook"></a>
+				<a href=""><img src="img/svg/Icono-Pinterest.svg" alt="Pinterest"></a>
+				<a href=""><img src="img/svg/Icono-Instragram.svg" alt="Instagram"></a>
+			</div>
+		</section>
+		<section>
+			<h4>Escríbenos</h4>
+			<form>
+				<input type="text" value="Ingresa tu email aquí">
+				<br>
+				<input type="button" value="Unirse">
+			</form>
+		</section>
+		<section>
+			<h4>¿Necesitas ayuda?</h4>
+			<p>426-1789-606</p>
+			<p>dshapping@gmail.com</p>
+		</section>
+	</footer>
+</body>
 </html>
